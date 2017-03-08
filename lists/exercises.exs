@@ -27,6 +27,7 @@ defmodule MyList do
   # ListsAndRecursion-4
   def span(from, to), do: _span([to], from)
   defp _span(list = [from | _tail], from), do: list
-  defp _span([ head | tail ], from), do: _span([ head - 1, head | tail ], from)
-
+  defp _span([ head | tail ], from) do
+    _span([ head - 1, head | tail ], from)
+  end
 end
