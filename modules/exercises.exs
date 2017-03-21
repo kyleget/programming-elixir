@@ -32,3 +32,10 @@ end
 
 Chop.guess(273, 1..1000)
 Chop.guess(51028, 1..900000)
+
+# ModulesAndFunctions-7
+IO.puts :erlang.float_to_list(2.1868818283, [{:decimals, 2}])
+IO.puts System.get_env("PWD")
+IO.puts Path.extname("dave/test.exs")
+IO.puts System.cwd
+IO.inspect System.cmd "whoami", []
